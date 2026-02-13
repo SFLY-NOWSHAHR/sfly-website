@@ -1,16 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const IRANSansXV = localFont({
+  src: [
+    {
+      path: '../public/fonts/IRANSansX-Regular.woff',
+      weight: '400'
+    },
+    {
+      path: '../public/fonts/IRANSansX-Bold.woff',
+      weight: '600'
+    },
+    {
+      path: '../public/fonts/IRANSansX-Black.woff',
+      weight: '800'
+    }
+  ],
+  variable: '--font-IRANSansXV',
+  display: 'swap'
+})
 
 export const metadata: Metadata = {
   title: 'SFLY نوشهر | تیم حرفه‌ای اسکیت‌',
@@ -46,15 +56,14 @@ export const metadata: Metadata = {
 }
 
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark" style={{ colorScheme: 'dark' }}>
-      <body className="font-sans antialiased bg-background text-foreground">
+    <html lang="fa" className="dark" style={{ colorScheme: 'dark' }}>
+      <body className={`${IRANSansXV.className} font-sans antialiased bg-background text-foreground`}>
         <main className="min-h-screen">
           {children}
         </main>
