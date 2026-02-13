@@ -69,7 +69,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" className="dark" style={{ colorScheme: 'dark' }}>
+    <html lang="fa" dir="rtl" className="dark" style={{ colorScheme: 'dark' }}>
       <body className={`${IRANSansXV.className} font-sans antialiased bg-background text-foreground`}>
         <main className="min-h-screen">
           {children}
