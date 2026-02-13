@@ -1,6 +1,13 @@
 import Image from "next/image";
 
-export default function Home() {
+
+async function sleep(ms:number) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+export default async function Home() {
+  await sleep(2000)
+
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
@@ -22,7 +29,7 @@ export default function Home() {
               href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
               className="font-medium text-zinc-950 dark:text-zinc-50"
             >
-              Templates
+              قالب ها
             </a>{" "}
             or the{" "}
             <a
