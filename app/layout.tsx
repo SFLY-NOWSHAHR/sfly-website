@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import localFont from 'next/font/local'
 import "./globals.css";
+import Navbar from "@/components/Navbar";
 
 
 const IRANSansXV = localFont({
@@ -71,6 +72,7 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl" className="dark" style={{ colorScheme: 'dark' }}>
       <body className={`${IRANSansXV.className} font-sans antialiased bg-background text-foreground`}>
+        <Navbar/>
         <main className="min-h-screen">
           {children}
         </main>
