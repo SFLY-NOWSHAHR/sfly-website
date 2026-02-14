@@ -10,7 +10,7 @@ export default function Loading() {
             <div className="w-12 h-12 border-4 border-t-primary rounded-full animate-spin" />
           </div>
           <h2 className="text-2xl font-bold text-foreground mb-2">درحال اسکیت کردن...</h2>
-          <p className="text-muted-foreground">الان میرسه به خط پایان!</p>
+          <p className="text-muted-foreground">به خط پایان نزدیکه!</p>
         </div>
       </Section>
     )
