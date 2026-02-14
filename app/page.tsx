@@ -1,5 +1,6 @@
 import FeaturedPlayers from "@/components/FeaturedPlayer";
 import Hero from "@/components/Hero";
+import LatestNews from "@/components/LateNews";
 import Section from "@/components/Section";
 import Image from "next/image";
 
@@ -59,6 +60,9 @@ export default async function Home() {
 
       {/* Featured Player */}
       <FeaturedPlayers />
+
+      {/* Latest News */}
+      <LatestNews />
     </>
   );
 }
