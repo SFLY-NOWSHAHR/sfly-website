@@ -1,3 +1,4 @@
+import FeaturedPlayers from "@/components/FeaturedPlayer";
 import Hero from "@/components/Hero";
 import Section from "@/components/Section";
 import Image from "next/image";
@@ -23,7 +24,7 @@ export default async function Home() {
       />
 
       {/* Team Introduction */}
-      <Section className="bg-gradient-to-b from-background bg-gray-600 to-card/80">
+      <Section className="bg-gradient-to-b from-background to-card/80">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-balance text-4xl font-bold text-foreground mb-4">
             درباره <span className="text-primary">تیم اسفلای نوشهر</span>
@@ -56,6 +57,8 @@ export default async function Home() {
         </div>
       </Section>
 
+      {/* Featured Player */}
+      <FeaturedPlayers />
     </>
   );
 }
