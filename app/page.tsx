@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import LatestNews from "@/components/LateNews";
 import Section from "@/components/Section";
 import Image from "next/image";
+import Link from "next/link";
 
 
 async function sleep(ms:number) {
@@ -63,6 +64,29 @@ export default async function Home() {
 
       {/* Latest News */}
       <LatestNews />
+
+      <Section className="bg-card/50 text-center">
+        <h2 className="text-balance text-4xl font-bold text-foreground mb-6">
+          آماده‌ای بهترین تجربه را حس کنی؟
+        </h2>
+        <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          به جمع ما بپیوند، از حرفه‌ای‌ها یاد بگیر و ببین چه چیزی لازم است تا در صدر اسکیت رولینگ بدرخشی.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/posts"
+            className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-bold rounded-lg hover:bg-secondary transition-all duration-300 hover:shadow-lg hover:shadow-primary/50"
+          >
+            خواندن بلاگ های ما
+          </Link>
+          <Link
+            href="/coach"
+            className="inline-flex items-center justify-center px-8 py-3 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-300"
+          >
+            دیدار با مربی
+          </Link>
+        </div>
+      </Section>
     </>
   );
 }
