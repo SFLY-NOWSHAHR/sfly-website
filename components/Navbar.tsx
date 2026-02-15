@@ -23,7 +23,7 @@ export default function Navbar() {
           <div className="flex gap-24">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
-              <div className="text-2xl font-bold text-primary">SF<span className='text-white'>L</span><span className='text-red-600'>Y</span></div>
+              <div className="text-2xl font-bold text-primary">SFLY</div>
               <span className="text-sm font-semibold text-muted-foreground">مازندران، نوشهر</span>
             </Link>
 
@@ -41,13 +41,22 @@ export default function Navbar() {
             </div>
           </div>
 
-          <Image 
-            className="md:flex hidden"
-            src={"/mazandaran-map.webp"} 
-            width={80} 
-            height={60} 
-            alt="mazandaran map" 
-          />
+          <div className="relative p-2 group cursor-pointer">
+            <Image 
+              className="md:flex hidden"
+              src={"/mazandaran-map.webp"} 
+              width={80} 
+              height={60} 
+              alt="mazandaran map" 
+            />
+            <div className="absolute inset-0 bg-black/60 flex items-center justify-center 
+              opacity-0 group-hover:opacity-100 
+              transition duration-300 rounded-lg">
+              <p className="text-white text-lg font-semibold">
+                مازندران
+              </p>
+            </div>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
