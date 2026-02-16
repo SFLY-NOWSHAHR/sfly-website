@@ -9,7 +9,7 @@ export default async function FeaturedPlayers() {
   const featuredPlayers = players.slice(0, 3)
 
   return (
-    <Section className="relative flex items-center justify-center overflow-hidden">
+    <Section className="relative flex overflow-hidden">
       {/* background image */}
       <Image
         src={"/images/bg1.jpg"}
@@ -21,8 +21,8 @@ export default async function FeaturedPlayers() {
       />
       {/* overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/80 to-black/90"></div>
-      <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-        <div className="mb-12 text-center flex justify-center items-center flex-col">
+      <div className="relative z-10">
+        <div className="mb-12 flex flex-col">
           <h2 className="text-balance text-4xl font-bold text-foreground mb-4">
             دیدار با <span className="text-primary">قهرمانان</span>
           </h2>
@@ -30,7 +30,7 @@ export default async function FeaturedPlayers() {
             بازیکنان اسکیت‌ بااستعدادی را کشف می کنیم که با مهارت، عزم و اشتیاق، نماینده‌ی اسفلای نوشهر هستند.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
         {featuredPlayers.map((player) => (
           <PlayerCard key={player.id} {...player} />
         ))}
