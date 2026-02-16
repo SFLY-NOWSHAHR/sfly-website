@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'بازیکنان تیم - SFLY Nowshahr',
+  title: 'بازیکنان تیم - اسفلای نوشهر',
   description: 'با اسکیت‌ سواران حرفه‌ای اسفلای نوشهر آشنا شوید. پیشینه، دستاوردها و سبک‌های منحصر به فرد اسکیت‌سواری آنها را کشف کنید.',
   keywords: 'تیم اسکیت به، اسکیت  حرفه ای، سوارکاران تیم، ورزشکاران اسکیت',
 }
