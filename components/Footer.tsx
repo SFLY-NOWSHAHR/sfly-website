@@ -81,7 +81,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-border pt-8">
           <p className="text-center text-xs text-muted-foreground">
-            تمام حقوق اين وب‌سايت نیز برای تیم اسفلای مازندران نوشهر است. {currentYear}&copy;
+            تمامی حقوق اين وب‌سايت نیز برای تیم اسفلای مازندران نوشهر است. {currentYear}&copy;
           </p>
         </div>
       </div>
