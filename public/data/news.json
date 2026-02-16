@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "slug": "sfly-wins-international-championship",
+    "title": "SFLY Noshahr Wins International Skateboarding Championship",
+    "content": "In a thrilling display of skill and determination, SFLY Noshahr clinched the International Skateboarding Championship title this weekend. The team's combined performance across street, vert, and freestyle events showcased the exceptional talent our riders possess. Congratulations to all team members for their outstanding performances and dedication to the sport.",
+    "image": "/images/news/championship.jpg",
+    "date": "2024-02-20T16:45:00Z",
+    "seoDescription": "SFLY Noshahr wins the International Skateboarding Championship with outstanding performances from all team riders."
+  },
+  {
+    "id": 2,
+    "slug": "new-sponsorship-announcement",
+    "title": "Exciting New Sponsorship Announcement",
+    "content": "We are thrilled to announce a new major sponsorship partnership with leading skateboard equipment manufacturers. This partnership will provide our riders with top-quality gear and support their continued success in international competitions. The new equipment line will be unveiled at our upcoming demo tour.",
+    "image": "/images/news/sponsorship.jpg",
+    "date": "2024-02-18T10:30:00Z",
+    "seoDescription": "SFLY Noshahr announces exciting new sponsorship partnership with major skateboard equipment manufacturer."
+  },
+  {
+    "id": 3,
+    "slug": "upcoming-demo-tour-2024",
+    "title": "Upcoming World Demo Tour 2024 - Schedule Released",
+    "content": "SFLY Noshahr is excited to announce its 2024 world demo tour schedule. Our riders will be visiting major cities across Asia, Europe, and North America, bringing skateboarding entertainment and workshops to fans worldwide. Check our schedule page for dates and locations near you.",
+    "image": "/images/news/camp.jpg",
+    "date": "2024-02-15T14:20:00Z",
+    "seoDescription": "SFLY Noshahr releases 2024 world demo tour schedule with stops in major cities globally."
+  },
+  {
+    "id": 4,
+    "slug": "coach-ali-interview",
+    "title": "Coach Ali Discusses Team Vision and Future Plans",
+    "content": "In an exclusive interview, our head coach Ali shares insights into the team's training methodology, future championship aspirations, and his vision for developing the next generation of skateboarding talent. Learn about the strategies that have made SFLY Noshahr one of the premier teams in skateboarding.",
+    "image": "/images/news/coach-interview.jpg",
+    "date": "2024-02-12T11:00:00Z",
+    "seoDescription": "Head coach Ali discusses SFLY Noshahr training methods, team vision, and championship aspirations in exclusive interview."
+  },
+  {
+    "id": 5,
+    "slug": "skateboarding-camp-registration",
+    "title": "Summer Skateboarding Camp Registration Now Open",
+    "content": "Sign up now for SFLY Noshahr's summer skateboarding camp! Learn from professional riders, improve your skills, and connect with the skateboarding community. Limited spots available for this intensive training program. Early registration discounts apply.",
+    "image": "/images/news/camp.jpg",
+    "date": "2024-02-10T09:15:00Z",
+    "seoDescription": "SFLY Noshahr summer skateboarding camp registration open with training from professional riders."
+  },
+  {
+    "id": 6,
+    "slug": "athlete-recovery-program",
+    "title": "New Athlete Recovery and Wellness Program Launched",
+    "content": "SFLY Noshahr introduces a comprehensive athlete recovery and wellness program to support the health and longevity of our riders. The program includes nutrition guidance, physical therapy, mental health support, and injury prevention strategies.",
+    "image": "/images/news/wellness.jpg",
+    "date": "2024-02-08T13:45:00Z",
+    "seoDescription": "SFLY Noshahr launches comprehensive athlete recovery and wellness program for rider health and support."
+  },
+  {
+    "id": 7,
+    "slug": "merchandise-collection-launch",
+    "title": "Limited Edition Merchandise Collection Now Available",
+    "content": "Check out our new limited edition merchandise collection featuring exclusive designs from SFLY Noshahr riders. Show your support for the team with authentic team apparel, accessories, and collectibles. Available in our online shop while supplies last.",
+    "image": "/images/news/merchandise.jpg",
+    "date": "2024-02-05T15:30:00Z",
+    "seoDescription": "SFLY Noshahr launches limited edition merchandise collection with exclusive team designs."
+  }
+]
