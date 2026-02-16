@@ -1,0 +1,100 @@
+[
+  {
+    "id": 1,
+    "slug": "hosein-ghasemizade",
+    "name": "حسین قاسمی زاده",
+    "position": "رهبر تیم",
+    "bio": "Innovative street skater known for creative line combinations and technical consistency. Alireza pushes boundaries with unique trick variations.",
+    "achievements": [
+      "National Street Championship 2023",
+      "Best Trick Award 2023",
+      "International Skate Cup Winner",
+      "Magazine Cover Feature"
+    ],
+    "image": "/images/players/person4.jpeg"
+  },
+  {
+    "id": 2,
+    "slug": "mohammad-reza-faraji",
+    "name": "محمدرضا فرجی",
+    "position": "Vert Master",
+    "bio": "Specialized in vertical ramp skating with impressive air tricks. Known for his fearless approach and technical execution on vert ramps.",
+    "achievements": [
+      "Vert Championship 2023",
+      "Air Tricks Award",
+      "Pro Sponsor Contract",
+      "Demo Tour Asia"
+    ],
+    "image": "/images/players/person1.jpeg"
+  },
+  {
+    "id": 3,
+    "slug": "fatemeh-abdolahi",
+    "name": "فاطمه عبدالهی",
+    "position": "Street Specialist",
+    "bio": "Dynamic street skater with exceptional manuals and flip tricks. Sara represents the next generation of professional skateboarding.",
+    "achievements": [
+      "Women Street Championship 2023",
+      "Progressive Skater Award",
+      "YouTube Star",
+      "Emerging Talent Nominee"
+    ],
+    "image": "/images/players/person2.jpeg"
+  },
+  {
+    "id": 4,
+    "slug": "karim-aziz",
+    "name": "Karim Aziz",
+    "position": "Freestyle Expert",
+    "bio": "Master of freestyle skateboarding with incredible balance and board control. Karim's creativity knows no bounds.",
+    "achievements": [
+      "Freestyle Championship 2023",
+      "Best Creativity Award",
+      "International Demo Tour",
+      "Trick Innovation Award"
+    ],
+    "image": "/images/players/person3.jpeg"
+  },
+  {
+    "id": 5,
+    "slug": "fiona-noshahr",
+    "name": "Fiona Noshahr",
+    "position": "All-Around Athlete",
+    "bio": "Versatile skater excelling in both street and vert. Fiona's diverse skill set makes her a valuable team member.",
+    "achievements": [
+      "All-Around Championship 2023",
+      "Consistency Award",
+      "International Recognition",
+      "Team MVP 2023"
+    ],
+    "image": "/images/players/person4.jpeg"
+  },
+  {
+    "id": 6,
+    "slug": "arash-tehrani",
+    "name": "Arash Tehrani",
+    "position": "Technical Skater",
+    "bio": "Precision-focused skater known for technical complexity and clean execution. Arash represents skateboarding as an art form.",
+    "achievements": [
+      "Technical Excellence Award 2023",
+      "World Cup Participant",
+      "Magazine Feature",
+      "Sponsored Pro"
+    ],
+    "image": "/images/players/person5.jpeg"
+  },
+  {
+    "id": 7,
+    "slug": "rana-soleymani",
+    "name": "Rana Soleymani",
+    "position": "Rising Star",
+    "bio": "Young talent with incredible potential and natural ability. Rana brings fresh energy and innovative approaches to skateboarding.",
+    "achievements": [
+      "Youth Championship 2023",
+      "Most Promising Skater",
+      "Demo Tour Regular",
+      "Team Selection"
+    ],
+    "image": "/images/players/rana.jpg"
+  }
+]
