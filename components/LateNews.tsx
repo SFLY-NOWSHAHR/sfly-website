@@ -22,8 +22,8 @@ export default async function LatestNews() {
       {/* overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/80 to-black/90" />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-        <div className="mb-12 text-center flex justify-center items-center flex-col">
+      <div className="relative z-10">
+        <div className="mb-12  flex-col">
           <h2 className="text-balance text-4xl font-bold text-foreground mb-4">
             آخرین <span className="text-primary">اخبار</span>
           </h2>
