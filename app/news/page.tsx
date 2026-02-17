@@ -3,6 +3,7 @@ import Section from '@/components/Section'
 import NewsCard from '@/components/NewsCard'
 import { getNews } from '@/lib/data'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'اخبار جدید - اسفلای نوشهر',
@@ -16,13 +17,27 @@ export default async function NewsPage() {
   return (
     <>
       {/* Header */}
-      <Section className="text-center bg-card/30 border-b border-border">
-        <h1 className="text-balance text-5xl md:text-6xl font-bold text-foreground mb-4">
-          Latest <span className="text-secondary">News</span>
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Stay informed with the latest announcements, competitions, and updates from SFLY Noshahr.
-        </p>
+      <Section className="relative overflow-hidden text-center border-b border-border">
+        {/* background image */}
+        <Image
+          src={"/images/bg1.jpg"}
+          alt="Hero background"
+          fill
+          sizes="100vw"
+          className="absolute inset-0 object-cover"
+          priority
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/80 to-black/90"></div>
+
+        <div className="relative z-10">
+            <h1 className="text-balance text-5xl md:text-6xl font-bold text-foreground mb-4">
+                آخرین <span className="text-secondary">اخبار</span>
+            </h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            از آخرین اطلاعیه‌ها، مسابقات و به‌روزرسانی‌های اسفلای نوشهر مطلع شوید.
+            </p>
+        </div>
       </Section>
 
       {/* News Grid */}
@@ -35,24 +50,24 @@ export default async function NewsPage() {
           </div>
         ) : (
           <div className="text-center py-12">
-            <p className="text-muted-foreground text-lg">No news available yet.</p>
+            <p className="text-muted-foreground text-lg">آخبار جدیدی در دسترس نیست.</p>
           </div>
         )}
       </Section>
 
       {/* CTA */}
-      <Section className="text-center bg-card/50">
+      <Section className="text-center">
         <h2 className="text-balance text-3xl font-bold text-foreground mb-4">
-          Want to Learn More About Skateboarding?
+          می‌خواهید درباره اسکیت‌ بیشتر بدانید؟
         </h2>
         <p className="text-muted-foreground mb-6">
-          Check out our comprehensive blog with tips and techniques from our professional riders.
+          وبلاگ جامع ما را با نکات و تکنیک‌های سوارکاران حرفه‌ای ما بررسی کنید.
         </p>
         <Link
           href="/posts"
-          className="inline-flex items-center justify-center px-6 py-3 bg-primary text-black font-bold rounded-lg hover:bg-secondary transition-all"
+          className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-bold rounded-lg hover:bg-secondary transition-all"
         >
-          Read Blog Posts →
+          → خواندن بلاگ ها 
         </Link>
       </Section>
     </>
