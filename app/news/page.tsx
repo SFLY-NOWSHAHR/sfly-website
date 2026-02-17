@@ -5,9 +5,9 @@ import { getNews } from '@/lib/data'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'News & Updates - SFLY Noshahr',
-  description: 'Stay updated with the latest news, announcements, and happenings from SFLY Noshahr skateboarding team.',
-  keywords: 'skateboarding news, team updates, skateboard competitions, team announcements',
+  title: 'اخبار جدید - اسفلای نوشهر',
+  description: 'از آخرین اخبار، اطلاعیه‌ها و رویدادهای تیم اسکیت‌ اسفلای نوشهر مطلع شوید.',
+  keywords: 'اخبار اسکیت, اخبار اسکیت نوشهر, رقابت اسکیت, اخبار تیم اسفلای نوشهر',
 }
 
 export default async function NewsPage() {
