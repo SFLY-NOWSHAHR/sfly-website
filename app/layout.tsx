@@ -5,22 +5,20 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 
-const IRANSansXV = localFont({
+const VazirFont = localFont({
   src: [
     {
-      path: '../public/fonts/IRANSansX-Regular.woff',
-      weight: '400'
+      path: './fonts/Vazir.woff2',
+      weight: '400',
+      style: 'normal'
     },
     {
-      path: '../public/fonts/IRANSansX-Bold.woff',
-      weight: '600'
+      path: './fonts/Vazir-Bold.woff2',
+      weight: '700',
+      style: 'normal'
     },
-    {
-      path: '../public/fonts/IRANSansX-Black.woff',
-      weight: '800'
-    }
   ],
-  variable: '--font-IRANSansXV',
+  variable: '--font-vazir',
   display: 'swap'
 })
 
@@ -71,8 +69,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" dir="rtl" className="dark" style={{ colorScheme: 'dark' }}>
-      <body className={`${IRANSansXV.className} font-sans antialiased bg-blue-600 text-foreground`}>
+    <html lang="fa" dir="rtl" className={`${VazirFont.className} dark`} style={{ colorScheme: 'dark' }}>
+      <body className={"font-sans antialiased bg-blue-600 text-foreground"}>
         <Navbar />
         <main className="min-h-screen">
           {children}
