@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import {ReactTyped} from "react-typed"
+import Section from './Section'
 
 
 interface HeroProps {
@@ -23,7 +24,7 @@ export default function Hero({
   backgroundImage = '/images/hero-default.jpg',
 }: HeroProps) {
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
+    <Section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
         src={backgroundImage}
@@ -72,6 +73,6 @@ export default function Hero({
           </div>
         )}
       </div>
-    </div>
+    </Section>
   )
 }
