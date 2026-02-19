@@ -4,6 +4,27 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
+import { motion, AnimatePresence, Variants } from 'framer-motion'
+
+const mobileMenuVariants: Variants = {
+  hidden: {
+    height: 0,
+    opacity: 0,
+    transition: {
+      duration: 0.3,
+      ease: [0.4, 0, 0.2, 1],
+    },
+  },
+  visible: {
+    height: 'auto',
+    opacity: 1,
+    transition: {
+      duration: 0.35,
+      ease: [0.4, 0, 0.2, 1],
+    },
+  },
+}
+
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -17,7 +38,7 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur">
+    <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur m-1 rounded-3xl">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex gap-24">
@@ -68,22 +89,37 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <div className="md:hidden border-t border-border">
-            <div className="flex flex-col space-y-1 py-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-card hover:text-primary rounded-md transition-colors"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.label}
-                </Link>
+        <AnimatePresence>
+      {mobileMenuOpen && (
+        <motion.div
+          key="mobile-menu"
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          variants={mobileMenuVariants}
+          className="md:hidden border-t border-border overflow-hidden"
+        >
+        <motion.div
+          initial={{ y: -10 }}
+          animate={{ y: 0 }}
+          exit={{ y: -10 }}
+          transition={{ duration: 0.3 }}
+          className="flex flex-col space-y-1 py-4"
+        >
+        {navLinks.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className="block px-4 py-2 text-sm font-medium text-foreground hover:bg-card hover:text-primary rounded-md transition-colors"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            {link.label}
+          </Link>
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         )}
+      </AnimatePresence>
       </div>
     </nav>
   )
