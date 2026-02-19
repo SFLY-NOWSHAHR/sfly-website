@@ -16,9 +16,9 @@ export default async function Home() {
   return (
     <>
       <Hero
-        title="تیم اسفلای مازندران نوشهر"
+        title="آکادمی اسکیت اسفلای نوشهر"
         subtitle="آکادمی اسکیت حرفه ای"
-        description="در SFLY نوشهر، اسکیت فقط حرکت نیست؛
+        description="در اسفلای نوشهر، اسکیت فقط حرکت نیست؛
 جریانِ سرعت، تمرکز و جسارت است"
         ctaText="به ما بپیوندید"
         ctaHref="/players"

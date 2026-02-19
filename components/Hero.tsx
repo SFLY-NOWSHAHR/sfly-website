@@ -46,7 +46,7 @@ export default function Hero({
         )}
         
         <h1 className="text-balance text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-          <ReactTyped strings={[title]} typeSpeed={40} backDelay={3000} backSpeed={50} loop/>
+          <ReactTyped strings={[title, "بامربیگری فاطمه عبدالهی", "در مازندران، نوشهر"]} typeSpeed={60} backDelay={2500} backSpeed={50} loop/>
         </h1>
         
         {description && (
