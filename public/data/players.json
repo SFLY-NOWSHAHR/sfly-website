@@ -4,12 +4,12 @@
     "slug": "hosein-ghasemizade",
     "name": "حسین قاسمی زاده",
     "position": "رهبر تیم",
-    "bio": "Innovative street skater known for creative line combinations and technical consistency. Alireza pushes boundaries with unique trick variations.",
+    "bio": "اسکیت‌باز خلاق در سبک استریت که به خاطر ترکیب‌های نوآورانه و اجرای فنیِ منظم شناخته می‌شود. حسین با تنوع منحصربه‌فرد در اجرای تریک‌ها، مرزهای این سبک را جابه‌جا می‌کند.",
     "achievements": [
-      "National Street Championship 2023",
-      "Best Trick Award 2023",
-      "International Skate Cup Winner",
-      "Magazine Cover Feature"
+      "قهرمان استریت کشور 2023",
+      "جایزه بهترین تریک 2023",
+      "قهرمان جام بین‌المللی اسکیت",
+      "حضور روی جلد مجله تخصصی"
     ],
     "image": "/images/players/person4.jpeg"
   },
@@ -17,13 +17,13 @@
     "id": 2,
     "slug": "mohammad-reza-faraji",
     "name": "محمدرضا فرجی",
-    "position": "Vert Master",
-    "bio": "Specialized in vertical ramp skating with impressive air tricks. Known for his fearless approach and technical execution on vert ramps.",
+    "position": "متخصص ورت",
+    "bio": "متخصص اسکیت روی رمپ‌های عمودی با پرش‌های هوایی چشمگیر. او به دلیل جسارت بالا و اجرای فنی دقیق روی رمپ‌های ورت شناخته می‌شود.",
     "achievements": [
-      "Vert Championship 2023",
-      "Air Tricks Award",
-      "Pro Sponsor Contract",
-      "Demo Tour Asia"
+      "قهرمان ورت 2023",
+      "جایزه بهترین حرکات هوایی",
+      "قرارداد حرفه‌ای با اسپانسر",
+      "تور نمایشی آسیا"
     ],
     "image": "/images/players/person1.jpeg"
   },
@@ -31,69 +31,69 @@
     "id": 3,
     "slug": "fatemeh-abdolahi",
     "name": "فاطمه عبدالهی",
-    "position": "Street Specialist",
-    "bio": "Dynamic street skater with exceptional manuals and flip tricks. Sara represents the next generation of professional skateboarding.",
+    "position": "متخصص استریت",
+    "bio": "اسکیت‌باز پویا در سبک استریت با مهارت بالا در منوال‌ها و فلیپ تریک‌ها. فاطمه نماینده نسل جدید اسکیت‌بازان حرفه‌ای است.",
     "achievements": [
-      "Women Street Championship 2023",
-      "Progressive Skater Award",
-      "YouTube Star",
-      "Emerging Talent Nominee"
+      "قهرمان استریت بانوان 2023",
+      "جایزه اسکیت‌باز پیشرو",
+      "چهره محبوب یوتیوب",
+      "نامزد استعداد نوظهور"
     ],
     "image": "/images/players/person2.jpeg"
   },
   {
     "id": 4,
     "slug": "karim-aziz",
-    "name": "Karim Aziz",
-    "position": "Freestyle Expert",
-    "bio": "Master of freestyle skateboarding with incredible balance and board control. Karim's creativity knows no bounds.",
+    "name": "کریـم عزیز",
+    "position": "متخصص فری‌استایل",
+    "bio": "استاد فری‌استایل با تعادل فوق‌العاده و کنترل مثال‌زدنی روی تخته. خلاقیت کریم در اسکیت‌بورد هیچ مرزی نمی‌شناسد.",
     "achievements": [
-      "Freestyle Championship 2023",
-      "Best Creativity Award",
-      "International Demo Tour",
-      "Trick Innovation Award"
+      "قهرمان فری‌استایل 2023",
+      "جایزه بهترین خلاقیت",
+      "تور نمایشی بین‌المللی",
+      "جایزه نوآوری در تریک"
     ],
     "image": "/images/players/person3.jpeg"
   },
   {
     "id": 5,
     "slug": "fiona-noshahr",
-    "name": "Fiona Noshahr",
-    "position": "All-Around Athlete",
-    "bio": "Versatile skater excelling in both street and vert. Fiona's diverse skill set makes her a valuable team member.",
+    "name": "فیونا نوشهر",
+    "position": "ورزشکار چندمهارته",
+    "bio": "اسکیت‌بازی چندبعدی که هم در استریت و هم در ورت عملکرد درخشانی دارد. مجموعه مهارت‌های متنوع فیونا او را به عضوی ارزشمند برای تیم تبدیل کرده است.",
     "achievements": [
-      "All-Around Championship 2023",
-      "Consistency Award",
-      "International Recognition",
-      "Team MVP 2023"
+      "قهرمان چندمهارته 2023",
+      "جایزه ثبات عملکرد",
+      "شناخت بین‌المللی",
+      "ارزشمندترین بازیکن تیم 2023"
     ],
     "image": "/images/players/person4.jpeg"
   },
   {
     "id": 6,
     "slug": "arash-tehrani",
-    "name": "Arash Tehrani",
-    "position": "Technical Skater",
-    "bio": "Precision-focused skater known for technical complexity and clean execution. Arash represents skateboarding as an art form.",
+    "name": "آرش تهرانی",
+    "position": "اسکیت‌باز تکنیکی",
+    "bio": "اسکیت‌بازی دقیق و متمرکز بر جزئیات که به خاطر پیچیدگی فنی و اجرای تمیز شناخته می‌شود. آرش اسکیت‌بورد را به‌عنوان یک هنر به نمایش می‌گذارد.",
     "achievements": [
-      "Technical Excellence Award 2023",
-      "World Cup Participant",
-      "Magazine Feature",
-      "Sponsored Pro"
+      "جایزه برتری فنی 2023",
+      "شرکت‌کننده در جام جهانی",
+      "حضور در مجله تخصصی",
+      "اسکیت‌باز حرفه‌ای دارای اسپانسر"
     ],
     "image": "/images/players/person5.jpeg"
   },
   {
     "id": 7,
     "slug": "rana-soleymani",
-    "name": "Rana Soleymani",
-    "position": "Rising Star",
-    "bio": "Young talent with incredible potential and natural ability. Rana brings fresh energy and innovative approaches to skateboarding.",
+    "name": "رعنا سلیمانی",
+    "position": "ستاره نوظهور",
+    "bio": "استعدادی جوان با پتانسیل فوق‌العاده و توانایی ذاتی چشمگیر. رعنا با انرژی تازه و رویکردهای نوآورانه، رنگ جدیدی به دنیای اسکیت‌بورد می‌بخشد.",
     "achievements": [
-      "Youth Championship 2023",
-      "Most Promising Skater",
-      "Demo Tour Regular",
-      "Team Selection"
+      "قهرمان نوجوانان 2023",
+      "امیدوارکننده‌ترین اسکیت‌باز",
+      "عضو ثابت تورهای نمایشی",
+      "انتخاب‌شده در تیم اصلی"
     ],
     "image": "/images/players/rana.jpg"
   }
