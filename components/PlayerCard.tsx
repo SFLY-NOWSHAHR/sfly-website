@@ -12,7 +12,7 @@ interface PlayerCardProps {
 export default function PlayerCard({ slug, name, position, bio, image }: PlayerCardProps) {
   return (
     <Link href={`/players/${slug}`}>
-      <div className="group rounded-lg border border-border bg-card overflow-hidden hover:border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 cursor-pointer">
+      <div className="group rounded-3xl border border-border bg-card overflow-hidden hover:border-primary hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 cursor-pointer">
         {/* Image */}
         <div className="relative h-64 w-full overflow-hidden bg-muted">
           <Image

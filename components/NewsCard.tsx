@@ -13,7 +13,7 @@ interface NewsCardProps {
 export default function NewsCard({ slug, title, content, image, date }: NewsCardProps) {
   return (
     <Link href={`/news/${slug}`}>
-      <div className="group rounded-lg border border-border bg-card overflow-hidden hover:border-secondary hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300 cursor-pointer">
+      <div className="group rounded-3xl border border-border bg-card overflow-hidden hover:border-secondary hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300 cursor-pointer">
         {/* Image */}
         <div className="relative h-48 w-full overflow-hidden bg-muted">
           <Image
