@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Section from '@/components/Section'
 import { getNews, getNewsBySlug } from '@/lib/data'
 import { formatDate } from '@/lib/utils'
-import { ArrowLeft } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 export async function generateStaticParams() {
   const news = await getNews()
@@ -67,19 +67,19 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
   return (
     <>
       {/* Back Button */}
-      <div className="flex items-center gap-2 mb-0">
-        <Link
-          href="/news"
-          className="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors"
-        >
-          <ArrowLeft size={20} />
-          بازگشت به اخبار
-        </Link>
-      </div>
 
       {/* News Header */}
       <Section className="border-b border-border pb-12">
-        <div className="max-w-3xl mx-auto">
+        <div className="flex items-center gap-2 mb-8">
+          <Link
+            href="/news"
+            className="inline-flex items-center gap-2 text-secondary hover:text-primary transition-colors"
+          >
+            <ArrowRight size={20} />
+            بازگشت به اخبار
+          </Link>
+        </div>
+        <div className=" mx-auto">
           <p className="text-secondary font-semibold text-sm mb-4">{formatDate(newsItem.date)}</p>
           <h1 className="text-balance text-5xl font-bold text-foreground mb-6">
             {newsItem.title}
@@ -105,7 +105,7 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
       </Section>
 
       {/* News Content */}
-      <Section className="max-w-3xl mx-auto">
+      <Section>
         <article className="prose prose-invert max-w-none">
           <div className="text-lg leading-relaxed text-foreground whitespace-pre-wrap">
             {newsItem.content}
