@@ -16,6 +16,7 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-typed": "^2.0.12",
+    "swiper": "^12.1.2",
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
