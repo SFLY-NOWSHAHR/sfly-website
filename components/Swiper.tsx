@@ -8,13 +8,13 @@ import "swiper/css/navigation"
 import "swiper/css/pagination"
 import { FadeIn } from "./FadeIn"
 
-interface ImageType {
+interface GallaryType {
   url: string
   alt: string
 }
 
 interface SwiperSlidesProps {
-  images: ImageType[]
+  images: GallaryType[]
   autoplayDelay?: number
 }
 
@@ -23,7 +23,7 @@ export default function SwiperSlides({
   autoplayDelay = 2000,
 }: SwiperSlidesProps) {
   return (
-    <section className="my-20 mx-auto max-w-7xl px-2 lg:px-4">
+    <section className="my-2 mx-auto px-2">
       <FadeIn className="flex items-center gap-x-2">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -31,8 +31,6 @@ export default function SwiperSlides({
             delay: autoplayDelay,
             disableOnInteraction: false,
           }}
-          navigation
-          pagination={{ clickable: true }}
           loop
           className="h-96 w-full rounded-4xl"
           breakpoints={{
@@ -49,7 +47,7 @@ export default function SwiperSlides({
                   src={image.url}
                   alt={image.alt}
                   fill
-                  className="object-cover rounded-4xl"
+                  className="object-cover rounded-3xl"
                   sizes="(max-width: 768px) 100vw, 25vw"
                 />
               </div>

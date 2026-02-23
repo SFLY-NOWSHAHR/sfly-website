@@ -25,12 +25,18 @@ interface Player {
   image: string
 }
 
+interface GallaryType {
+  url: string
+  alt: string | undefined
+}
+
 interface NewsItem {
   id: number
   slug: string
   title: string
   content: string
   image: string
+  gallary: GallaryType[]
   date: string
   seoDescription: string
 }
