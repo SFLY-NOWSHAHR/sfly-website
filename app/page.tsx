@@ -27,17 +27,17 @@ export default async function Home() {
       />
 
       {/* Team Introduction */}
-      <Section className="bg-gradient-to-b from-primary to-cyan-950 ">
+      <Section className="bg-gradient-to-b to-card/50 ">
         <FadeIn>
           <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-balance text-4xl font-bold text-white mb-4">
             درباره <span className="">تیم اسفلای نوشهر</span>
           </h2>
-          <p className="text-xl text-white mb-6 leading-relaxed">
+          <p className="text-xl text-right sm:text-center text-white mb-6 leading-relaxed">
             اسفلای نوشهر، تیمی حرفه‌ای و پیشرو در دنیای اسکیت است که همواره مرزهای این ورزش را فراتر می‌برد.
 اعضای تیم ما علاوه بر حضور در بالاترین سطح رقابت، با کسب مقام‌های برتر در مسابقات استانی و کشوری، افتخارات ارزشمندی را رقم زده‌اند و الهام‌بخش نسل آینده اسکیت‌سواران هستند.
           </p>
-            <p className="text-lg text-white leading-relaxed">
+            <p className="text-lg text-right sm:text-center text-white leading-relaxed">
               از فری‌استایل تا مسابقات حرفه‌ای،
   ما نماینده‌ی پیشروی فرهنگ اسکیت رولینگ هستیم.
   به ما بپیوندید تا همچنان نوآوری کنیم، الهام ببخشیم و این ورزش را به سطحی بالاتر برسانیم.

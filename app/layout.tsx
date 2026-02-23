@@ -70,7 +70,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl" className={`${VazirFont.className} dark`} style={{ colorScheme: 'dark' }}>
-      <body className={"font-sans antialiased bg-cyan-500 text-foreground"}>
+      <body className={"font-sans antialiased bg-[#0284c7] text-foreground"}>
         <Navbar />
         <main className="min-h-screen">
           {children}

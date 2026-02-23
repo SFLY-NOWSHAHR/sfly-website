@@ -44,8 +44,8 @@ export default function Navbar() {
           <div className="flex gap-24">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2">
-              <div className="text-2xl font-bold text-white">SFLY</div>
-              <span className="text-sm font-semibold text-muted-foreground">مازندران، نوشهر</span>
+              <div className="text-2xl font-bold text-white">اسفلای</div>
+              <span className="text-2xl font-semibold text-white">نوشهر</span>
             </Link>
 
             {/* Desktop Navigation */}
