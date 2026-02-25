@@ -4,6 +4,7 @@ import NewsCard from '@/components/NewsCard'
 import { getNews } from '@/lib/data'
 import Link from 'next/link'
 import Image from 'next/image'
+import CTA from '@/components/Cta'
 
 export const metadata: Metadata = {
   title: 'اخبار جدید - اسفلای نوشهر',
@@ -56,20 +57,13 @@ export default async function NewsPage() {
       </Section>
 
       {/* CTA */}
-      <Section className="text-center">
-        <h2 className="text-balance text-3xl font-bold text-foreground mb-4">
-          می‌خواهید درباره اسکیت‌ بیشتر بدانید؟
-        </h2>
-        <p className="text-muted-foreground mb-6">
-          وبلاگ جامع ما را با نکات و تکنیک‌های سوارکاران حرفه‌ای ما بررسی کنید.
-        </p>
-        <Link
-          href="/posts"
-          className="inline-flex items-center justify-center px-6 py-3 bg-primary text-white font-bold rounded-lg hover:bg-secondary transition-all"
-        >
-          → خواندن بلاگ ها 
-        </Link>
-      </Section>
+      <CTA 
+        imgSrc="bg2"
+        title="می‌خواهید درباره اسکیت‌ بیشتر بدانید؟"
+        desc="وبلاگ جامع ما را با نکات و تکنیک‌های سوارکاران حرفه‌ای ما بررسی کنید."
+        href="posts"
+        linkContent="خواندن بلاگ ها "
+      />
     </>
   )
 }
