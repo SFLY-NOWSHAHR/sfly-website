@@ -4,6 +4,7 @@ import PlayerCard from '@/components/PlayerCard'
 import { getPlayers } from '@/lib/data'
 import Link from 'next/link'
 import Image from 'next/image'
+import CTA from '@/components/Cta'
 
 export const metadata: Metadata = {
   title: 'بازیکنان تیم - اسفلای نوشهر',
@@ -57,20 +58,13 @@ export default async function PlayersPage() {
       </Section>
 
       {/* CTA */}
-      <Section className="text-center">
-        <h2 className="text-balance text-3xl font-bold text-foreground mb-4">
-          به تیم ما علاقه دارید؟
-        </h2>
-        <p className="text-muted-foreground mb-6">
-          آخرین اخبار تیم ما را دنبال کنید.
-        </p>
-        <Link
-          href="/news"
-          className="inline-flex items-center justify-center px-6 py-3 bg-secondary text-white font-bold rounded-lg hover:bg-primary transition-all"
-        >
-           → خواندن آخرین اخبار
-        </Link>
-      </Section>
+      <CTA
+        imgSrc="bg3"
+        title="به تیم ما علاقه دارید؟"
+        desc="آخرین اخبار تیم ما را دنبال کنید."
+        href="news"
+        linkContent="خواندن آخرین اخبار"
+      />
     </>
   )
 }
