@@ -6,6 +6,7 @@ import { getNews, getNewsBySlug } from '@/lib/data'
 import { formatDate } from '@/lib/utils'
 import { ArrowRight } from 'lucide-react'
 import SwiperSlides from '@/components/Swiper'
+import NewsCard from '@/components/NewsCard'
 
 export async function generateStaticParams() {
   const news = await getNews()
@@ -92,17 +93,6 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
       </Section>
 
       {/* Featured Image */}
-      {/* <Section className=""> */}
-        {/* <div className="relative h-96 w-full overflow-hidden rounded-lg">
-          <Image
-            src={newsItem.image}
-            alt={newsItem.title}
-            fill
-            sizes="(max-width: 768px) 100vw, 100vw"
-            className="object-cover"
-            priority
-          />
-        </div> */}
         <SwiperSlides 
           autoplayDelay={3000}
           images={newsItem.gallary.map(image => ({
@@ -111,7 +101,6 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
           }))}>
 
         </SwiperSlides>
-      {/* </Section> */}
 
       {/* News Content */}
       <Section>
@@ -125,28 +114,10 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
       {/* Related News */}
       {relatedNews.length > 0 && (
         <Section className="border-t border-border">
-          <h2 className="text-3xl font-bold text-foreground mb-8">More News</h2>
+          <h2 className="text-3xl font-bold text-foreground mb-8">اخبار بیشتر</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {relatedNews.map((news) => (
-              <Link key={news.id} href={`/news/${news.slug}`}>
-                <div className="group rounded-lg border border-border bg-card overflow-hidden hover:border-secondary hover:shadow-lg hover:shadow-secondary/20 transition-all duration-300 cursor-pointer">
-                  <div className="relative h-40 w-full overflow-hidden bg-muted">
-                    <Image
-                      src={news.image}
-                      alt={news.title}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <p className="text-xs text-secondary font-semibold mb-2">{formatDate(news.date)}</p>
-                    <h3 className="text-lg font-bold text-foreground group-hover:text-secondary transition-colors line-clamp-2">
-                      {news.title}
-                    </h3>
-                  </div>
-                </div>
-              </Link>
+              <NewsCard key={news.id} {...news} />
             ))}
           </div>
         </Section>
