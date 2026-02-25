@@ -37,7 +37,7 @@ export default function PlayerCard({ slug, name, position, bio, image }: PlayerC
             {bio}
           </p>
           <div className="mt-4 inline-flex items-center text-primary font-semibold text-sm group-hover:gap-2 gap-1 transition-all">
-            دیدن پروفایل →
+            دیدن پروفایل ⭠
           </div>
         </div>
       </div>

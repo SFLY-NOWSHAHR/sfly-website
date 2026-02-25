@@ -35,7 +35,7 @@ export default function NewsCard({ slug, title, content, image, date }: NewsCard
             {content}
           </p>
           <div className="mt-4 inline-flex items-center text-secondary font-semibold text-sm group-hover:gap-2 gap-1 transition-all">
-            خواندن اخبار →
+            خواندن اخبار ⭠
           </div>
         </div>
       </div>
