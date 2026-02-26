@@ -24,7 +24,7 @@ export async function generateMetadata(
   if (!newsItem) {
     return {
       title: 'صفحه مورد نظر یافت نشد!',
-      description: 'The news article you are looking for does not exist.',
+      description: 'مقاله خبری مورد نظر شما وجود ندارد.',
     }
   }
 
@@ -68,7 +68,6 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
 
   return (
     <>
-      {/* Back Button */}
 
       {/* News Header */}
       <Section className="border-b border-border pb-12">
