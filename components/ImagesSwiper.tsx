@@ -18,7 +18,7 @@ interface SwiperSlidesProps {
   autoplayDelay?: number
 }
 
-export default function SwiperSlides({
+export default function ImageSwiper ({
   images,
   autoplayDelay = 2000,
 }: SwiperSlidesProps) {
