@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import Image from 'next/image'
 import { motion, AnimatePresence, Variants } from 'framer-motion'
+import { Button } from './ui/Button'
 
 const mobileMenuVariants: Variants = {
   hidden: {
@@ -39,7 +40,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-background/95 backdrop-blur m-1 rounded-3xl">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex gap-24">
             {/* Logo */}
@@ -54,7 +55,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+                  className="text-base hover:-translate-y-1 py-4 px-2 transition-all font-medium text-foreground hover:text-primary"
                 >
                   {link.label}
                 </Link>
@@ -62,22 +63,9 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="relative p-2 group cursor-pointer">
-            <Image 
-              className="md:flex hidden"
-              src={"/mazandaran-map.webp"} 
-              width={80} 
-              height={60} 
-              alt="mazandaran map" 
-            />
-            <div className="absolute inset-0 bg-black/60 flex items-center justify-center 
-              opacity-0 group-hover:opacity-100 
-              transition duration-300 rounded-lg">
-              <p className="text-white text-lg font-semibold">
-                مازندران
-              </p>
-            </div>
-          </div>
+          <Button href="tel:+989112907140" invert={false} className={"text-sm flex items-center justify-center  text-white shadow-lg"}>
+            میخوای عضو تیم ما باشی؟
+          </Button>
 
           {/* Mobile Menu Button */}
           <button

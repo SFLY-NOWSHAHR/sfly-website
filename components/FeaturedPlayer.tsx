@@ -3,6 +3,7 @@ import PlayerCard from './PlayerCard'
 import { getPlayers } from '@/lib/data'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Button } from './ui/Button'
 
 export default async function FeaturedPlayers() {
   const players = await getPlayers()
@@ -36,12 +37,12 @@ export default async function FeaturedPlayers() {
         ))}
         </div>
         <div className="flex justify-center">
-          <Link
+          <Button
             href="/players"
-            className="inline-flex items-center px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-300"
+            className="inline-flex items-center border-2 border-primary font-semibold"
           >
             → دیدن تمام بازیکنان
-          </Link>
+          </Button>
         </div>
       </div>
     </Section>

@@ -3,6 +3,7 @@ import FeaturedPlayers from "@/components/FeaturedPlayer";
 import Hero from "@/components/Hero";
 import LatestNews from "@/components/LateNews";
 import Section from "@/components/Section";
+import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -95,18 +96,19 @@ export default async function Home() {
               به جمع ما بپیوند، از حرفه‌ای‌ها یاد بگیر و ببین چه چیزی لازم است تا در صدر اسکیت رولینگ بدرخشی.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
+              <Button
                 href="/posts"
-                className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-bold rounded-lg hover:bg-secondary transition-all duration-300 hover:shadow-lg hover:shadow-primary/50"
+                className="inline-flex items-center justify-center font-bold hover:shadow-lg hover:shadow-primary/50"
               >
                 خواندن بلاگ های ما
-              </Link>
-              <Link
+              </Button>
+              <Button
                 href="/coach"
-                className="inline-flex items-center justify-center px-8 py-3 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-300"
+                invert={true}
+                className="inline-flex items-center justify-center border-2 border-primary font-bold"
               >
                 دیدار با مربی
-              </Link>
+              </Button>
             </div>
           </div>
         </Section>

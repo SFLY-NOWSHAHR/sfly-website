@@ -3,6 +3,7 @@ import NewsCard from './NewsCard'
 import { getNews } from '@/lib/data'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Button } from './ui/Button'
 
 export default async function LatestNews() {
   const news = await getNews()
@@ -39,12 +40,13 @@ export default async function LatestNews() {
         </div>
 
         <div className="flex justify-center">
-          <Link
+          <Button
+            invert={true}
             href="/news"
-            className="inline-flex items-center px-6 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-all duration-300"
+            className="hover:px-8 inline-flex items-center border-2 border-primary text-primary font-semibold hover:bg-primary  "
           >
-            → دیدن اخبار
-          </Link>
+            دیدن اخبار ⭠
+          </Button>
         </div>
       </div>
     </Section>

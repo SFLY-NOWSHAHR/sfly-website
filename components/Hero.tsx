@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import {ReactTyped} from "react-typed"
 import Section from './Section'
+import { Button } from './ui/Button'
 
 
 interface HeroProps {
@@ -58,18 +59,19 @@ export default function Hero({
         
         {ctaText && ctaHref && (
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
+            <Button
               href={ctaHref}
-              className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-bold rounded-lg hover:bg-secondary transition-all duration-300 hover:shadow-lg hover:shadow-primary/50"
+              className="inline-flex items-center justify-center px-8 py-3 bg-primary text-white font-bold hover:bg-secondary transition-all duration-300 hover:shadow-lg hover:shadow-primary/50"
             >
               {ctaText}
-            </Link>
-            <Link
+            </Button>
+            <Button
               href="/players"
-              className="inline-flex items-center justify-center px-8 py-3 border-2 border-primary text-primary font-bold rounded-lg hover:bg-primary hover:text-white transition-all duration-300"
+              invert={true}
+              className="inline-flex items-center justify-center px-8 py-3 border-2 border-primary text-primary font-bold hover:bg-primary hover:text-white transition-all duration-300"
             >
               تیم ما
-            </Link>
+            </Button>
           </div>
         )}
       </div>
