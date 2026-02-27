@@ -5,7 +5,7 @@ import Section from '@/components/Section'
 import { getNews, getNewsBySlug } from '@/lib/data'
 import { formatDate } from '@/lib/utils'
 import { ArrowRight } from 'lucide-react'
-import SwiperSlides from '@/components/Swiper'
+import ImageSwiper from '@/components/ImagesSwiper'
 import NewsCard from '@/components/NewsCard'
 
 export async function generateStaticParams() {
@@ -92,14 +92,14 @@ export default async function NewsPage({ params }: { params: Promise<{ slug: str
       </Section>
 
       {/* Featured Image */}
-        <SwiperSlides 
+        <ImageSwiper 
           autoplayDelay={3000}
           images={newsItem.gallary.map(image => ({
             url: image.url,
             alt: image.alt ?? ""
           }))}>
 
-        </SwiperSlides>
+        </ImageSwiper>
 
       {/* News Content */}
       <Section>
