@@ -134,6 +134,9 @@ export default async function PostPage(
                       <h3 className="text-lg font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2">
                         {relatedPost.title}
                       </h3>
+                      <p className="text-sm text-muted-foreground line-clamp-2">
+                        {relatedPost.content}
+                      </p>
                     </div>
                   </div>
                 </Link>
